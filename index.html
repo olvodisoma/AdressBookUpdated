@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Adress Book</title>
+    <style>  
+        table{
+            width: 100%;
+            border: 2px solid black;
+            text-align: center;
+        }
+        td{
+            min-width: 150px;
+            line-height: 2rem;
+            border: 1px solid black;
+            background-color: green ;
+        }
+        th{
+            background-color: red;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+        p{
+            width: 100px;
+        }
+        .uj{
+            min-width: 150px;
+            line-height: 2rem;
+        }
+        i{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Adress Book</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Mobile Phone Number</th>
+                    <th>Email Adress</th>
+                    <th>Job</th>
+                    <th>Adress</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <form>
+        <h2 class="mt-5 text-center">Create a new contant</h2>
+        <div class="row justify-content-center d-flex">
+            <p>Country:</p>
+            <input type="text" class="mb-2" id="contantCountry">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>First Name:</p>
+            <input type="text" class="mb-2" id="contantFirstName">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>Last Name:</p>
+            <input type="text" class="mb-2" id="contantLastName">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>Mobile:</p>
+            <input type="text" class="mb-2" id="contantMobile">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>Email:</p>
+            <input type="text" class="mb-2" id="contantEmail">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>Job:</p>
+            <input type="text" class="mb-2" id="contantJob">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <p>Adress:</p>
+            <input type="text" class="mb-2" id="contantAdress">
+        </div>
+        <div class="row justify-content-center d-flex">
+            <div class="btn btn-primary" onclick="addContant()">Create Contants</div>
+        </div>
+        </form>
+    </div>
+    <script src="data.js"></script>
+    <script src="adress.js"></script>
+</body>
+</html>
